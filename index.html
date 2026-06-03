@@ -24,12 +24,22 @@ html{
 
 body{
     color:white;
-    background:linear-gradient(
+
+    /* 🌈 Smooth 3-color fading theme */
+    background: linear-gradient(
         135deg,
-        #0b0f2f,
-        #1e1b4b,
-        #312e81
+        #0f172a,
+        #4c1d95,
+        #0ea5e9
     );
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 /* NAVBAR */
@@ -69,7 +79,7 @@ nav ul li a:hover{
     color:#facc15;
 }
 
-/* HERO CENTERED */
+/* HERO */
 
 .hero{
     min-height:100vh;
@@ -214,7 +224,7 @@ nav ul{
             software development, problem solving, and real-world tech solutions.
         </p>
 
-        <a href="#about" class="btn">Explore Portfolio</a>
+        <a href="#contact" class="btn">Get In Touch</a>
 
     </div>
 
@@ -289,6 +299,8 @@ nav ul{
         <p>GitHub: raguramgithub.com/RAGURAM</p>
         <br>
         <p>LinkedIn: raguramlinkedin.com/in/RAGURAM</p>
+        <br>
+        <p>Contact No: 8667654134</p>
 
     </div>
 
