@@ -3,109 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omega App - About</title>
+  <title>Raguram | Portfolio</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #ffffff;
-      line-height: 1.6;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 50px;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #e2e8f0;
+      margin-top: 10px;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 40px;
-      color: #38bdf8;
-      margin-bottom: 10px;
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     h2 {
       color: #22c55e;
-      margin-top: 30px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 18px;
       color: #cbd5e1;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      line-height: 1.6;
+      font-size: 17px;
     }
 
     ul {
-      color: #cbd5e1;
+      margin-top: 10px;
+      padding-left: 20px;
+      color: #e2e8f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 30px;
+      color: #94a3b8;
     }
 
     .highlight {
       color: #38bdf8;
       font-weight: bold;
     }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #64748b;
-      font-size: 14px;
-    }
   </style>
 </head>
 
 <body>
 
+  <header>
+    <h1>Hi, I'm Raguram 👋</h1>
+    <p>Frontend Developer | React & Next.js Enthusiast | UI Builder</p>
+  </header>
+
   <div class="container">
 
-    <h1>About This Project</h1>
-    <p>
-      A modern web application built with <span class="highlight">Next.js</span> and deployed on <span class="highlight">Vercel</span>.
-    </p>
-
     <div class="card">
-      <h2>Overview</h2>
+      <h2>About Me</h2>
       <p>
-        I am a passionate frontend developer focused on building modern, responsive, and user-friendly web applications using <b>React, Next.js, and Vercel deployment workflows</b>.
+        I am a passionate frontend developer focused on building modern, responsive, and user-friendly web applications using 
+        <span class="highlight">React</span>, <span class="highlight">Next.js</span>, and modern deployment tools like Vercel.
         <br><br>
-        This project reflects my ability to design clean and efficient UI interfaces while following best practices in component-based architecture and performance optimization.
-        <br><br>
-        I enjoy turning ideas into real-world web experiences that are both visually appealing and functionally strong. My focus is always on writing clean, maintainable code and building applications that deliver a smooth user experience across all devices.
+        I enjoy transforming ideas into real-world digital experiences with clean UI, performance optimization, and scalable architecture.
+        My focus is always on writing maintainable code and building applications that deliver smooth user experiences.
       </p>
     </div>
 
     <div class="card">
-      <h2>What This Project Demonstrates</h2>
+      <h2>Skills</h2>
       <ul>
-        <li>Modern React / Next.js development</li>
-        <li>Responsive UI design principles</li>
-        <li>Clean component architecture</li>
-        <li>Deployment using Vercel CI/CD</li>
-        <li>Performance-focused frontend design</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React.js & Next.js</li>
+        <li>Responsive Web Design</li>
+        <li>API Integration</li>
+        <li>Vercel Deployment</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Career Objective</h2>
+      <h2>Project Goal</h2>
       <p>
-        Through this project, I have strengthened my skills in frontend development and modern web technologies.  
-        I am continuously improving and aiming to grow as a full-stack developer capable of building production-ready applications that solve real-world problems.
+        To become a strong full-stack developer capable of building production-ready applications that solve real-world problems 
+        and deliver meaningful user experiences.
       </p>
     </div>
 
-    <footer>
-      © 2026 Omega App | Built with ❤️ using Next.js & Vercel
-    </footer>
-
   </div>
+
+  <footer>
+    © 2026 Raguram | Built with ❤️ using HTML & CSS
+  </footer>
 
 </body>
 </html>
