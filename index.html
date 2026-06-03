@@ -1,58 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+<title>Raguram R | Portfolio</title>
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    h1 {
-      font-size: 60px;
-      margin: 0;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-    p {
-      font-size: 20px;
-      color: #94a3b8;
-    }
+html{
+    scroll-behavior:smooth;
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #3b82f6;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+body{
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e1b4b,
+        #312e81,
+        #06b6d4
+    );
+    color:white;
+}
 
-    .btn:hover {
-      background: #2563eb;
-    }
-  </style>
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#06b6d4;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    text-shadow:
+    0 0 10px #8b5cf6,
+    0 0 20px #8b5cf6,
+    0 0 40px #06b6d4;
+}
+
+.hero-content h3{
+    font-size:1.5rem;
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    text-decoration:none;
+    color:white;
+    border-radius:50px;
+    background:linear-gradient(90deg,#8b5cf6,#06b6d4);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Sections */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+/* Cards */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.2);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    gap:15px;
+}
+}
+</style>
 </head>
 
 <body>
-  <div class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>I am a Web Developer</p>
-    <button class="btn">Get Started</button>
-  </div>
+
+<nav>
+    <div class="logo">RAGURAM</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>RAGURAM R</h1>
+
+        <h3>Computer Science Engineering Student</h3>
+
+        <p>
+            Passionate about Software Development, Artificial Intelligence,
+            Web Development and creating innovative digital experiences.
+            Currently exploring modern technologies and building projects.
+        </p>
+
+        <a href="#about" class="btn">Explore Portfolio</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            I'm Raguram, a Computer Science Engineering student with
+            a strong interest in programming, AI, web development and
+            software engineering. I enjoy learning new technologies
+            and building useful applications.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="card-container">
+        <div class="card">Python</div>
+        <div class="card">Java</div>
+        <div class="card">C Programming</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">AI & Machine Learning</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio website.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Project</h3>
+            <p>Artificial Intelligence based application.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Application</h3>
+            <p>Modern full-stack web application.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+        <p>Email: raguram@example.com</p>
+        <p>GitHub: github.com/raguram</p>
+        <p>LinkedIn: linkedin.com/in/raguram</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Raguram R | All Rights Reserved
+</footer>
+
 </body>
 </html>
